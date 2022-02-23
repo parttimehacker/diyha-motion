@@ -1,5 +1,7 @@
 # diyha-motion
-Motion sensor reporting to a Mosquito MQTT server. The Python application responds to specific information based on application topics, e.g. MQTT Broker subscribe/publish. This application is one of several general classes in my *do it yourself home automation system* (**DIYHA**). Each python DIYHA application is hosted on a Raspberry Pi server and will respond to a variety of subscribed topic and report on their status or application specific test data. 
+Motion sensor reporting to a Mosquito MQTT server. The Python application responds to a interrupt caused by an interrupt from the PIR. The application then publishes a "1" or "0" to a location topic, e.g. MQTT Broker subscribe/publish. This application is one of several general classes in my *do it yourself home automation system* (**DIYHA**). Each python DIYHA application is hosted on a Raspberry Pi server and will respond to a variety of subscribed topic and report on their status or application specific test data. 
+
+I like the device from Parallax https://www.parallax.com/product/pir-sensor-with-led-signal/
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django)
